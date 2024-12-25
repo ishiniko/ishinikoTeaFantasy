@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeaFantasy</title>
+    <link rel="icon" href="./img/Фавикон.jpg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="company-name">
+            <h2>ЧАЙНАЯ ФАНТАЗИЯ</h2>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a onclick="window.location.reload(); return false;">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#tables">Наши преимущества</a></li>
+                <li><a href="#products">Продукция</a></li>
+                <li><a href="#form">Прайс-лист</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- О НАС -->
+    <div class="wrapper">
+        <div class="background-about"> 
+            <div id="about"class="vnutri-block">
+                <p align = "justify">С 1989 года мы соединяем лучшие мировые традиции чаепития с российским вкусом к совершенству. Наша компания специализируется на поставках отборного чая с плантаций, которые славятся своим качеством по всему миру. Мы тщательно отбираем каждый листочек, чтобы вы могли наслаждаться настоящим чаем – ароматным, насыщенным и уникальным. Для нас каждая чашка чая – это не просто напиток, а возможность создать момент уюта и гармонии. Присоединяйтесь к нашему сообществу любителей настоящего чая!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- НАШИ ПРЕИМУЩЕСТВА -->
+    <div class="wrapper">
+        <div class="tables-section">
+            <h2 id="tables" class="section-title">Наши преимущества</h2>
+            <div class="tables-container">
+                <table class="highlight-table left-table">
+                    <thead>
+                        <tr>
+                            <th>Чайная фантазия</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Опыт на рынке с 1989 г.</td></tr>
+                        <tr><td>Строгий контроль качества на каждом этапе</td></tr>
+                        <tr><td>Прямые поставки с лучших мировых плантаций</td></tr>
+                        <tr><td>Индивидуальный подход и консультации экспертов</td></tr>
+                        <tr><td>Признание среди профессионалов отрасли</td></tr>
+                    </tbody>
+                </table>
+    
+                <table class="highlight-table right-table">
+                    <thead>
+                        <tr>
+                            <th>Любая другая компания</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Недавний выход на рынок </td></tr>
+                        <tr><td>Отсутствие четких стандартов контроля</td></tr>
+                        <tr><td>Зависимость от посредников и завышенные цены</td></tr>
+                        <tr><td>Задержки поставок</td></tr>
+                        <tr><td>Стандартный подход ко всем клиентам</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ПРОДУКЦИЯ -->
+     <div class="ramka">
+        <section class="product-section">
+            <h2 id="products" style="margin-bottom: 70px; margin-top: 20px; font-size: 36px;">Наша продукция</h2>
+            <div class="product-container">
+                <div class="product-card">
+                    <img src="./img/productEarlGrey.jpg" alt="Earl Grey черный с бергамотом">
+                    <h3>Earl Grey</h3>
+                    <p>
+                        Высококачественный, с легкой цитрусовой нотой эфирных масел бергамота.<br>
+                        – Из цельного чайного листа<br>
+                        – Сохраняем витамины и минералы.<br>
+                        – 100% натуральный.<br>
+                        – 25 пакетиков.
+                    </p>
+                    <h4>150 руб</h4>
+                    <button>Купить</button>
+                </div>
+                <div class="product-card">
+                    <img src="./img/productMilkOolong.jpg" alt="Молочный Улун">
+                    <h3>Milk Oolong</h3>
+                    <p>
+                        100% натуральный частично ферментированный китайский чай с молочным привкусом и ароматом.<br>
+                        – Отборное сырье.<br>
+                        – Удобные пакетики с ярлычками<br>
+                        – Насыщенный аромат<br>
+                        – 25 пакетиков.
+                    </p>
+                    <h4>200 руб</h4>
+                    <button>Купить</button>
+                </div>
+                <div class="product-card">
+                    <img src="./img/productPuerhOrange.jpg" alt="Puerh-Orange">
+                    <h3>Puerh-Orange</h3>
+                    <p>
+                        Оригинальное сочетание кенийского чая, китайского чая пуэр и яркого аромата апельсина <br>
+                        – 100% натуральный состав. <br>
+                        – С цедрой апельсина.<br>
+                        – Удобные пакетики с ярлычками.<br>
+                        – 25 пакетиков.
+                    </p>
+                    <h4>250 руб</h4>
+                    <button>Купить</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+ <!-- ЗАПОЛНИТЬ ФОРМУ -->
+    <div class="ramka">
+        <section id="form" class="feedback-section">
+            <h2 style="margin-bottom: 70px; font-size: 36px;">Заполните форму ниже - получите прайс-лист на все виды чая и индивидуальную консультацию!</h2>
+            <form onsubmit="handleFormSubmit(event)" class="feedback-form">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="text" required>
+                
+                <label for="number">Ваш номер телефона:</label>
+                <input type="number" id="number" name="number" required>
+                
+                <label for="email">Ваш email:</label>
+                <textarea id="email" name="email"  required></textarea>
+                
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- КОНТАКТЫ -->
+    <section id="contacts" class="contacts-section">
+
+        <div  class="map-container">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1e2bcb017213d37cf127fd5f95e4440387f0f79e4b33c21c7e8123cea5652a57&amp;source=constructor" width="1000" height="400" frameborder="0"></iframe>
+        </div>
+        
+        <h2 style="margin-bottom: 70px; font-size: 36px;">Контакты</h2>
+        <div class="container">
+            <div class="contact-info">
+                <div class="address">
+                    г. Москва, 2-й Вольный переулок, 11
+                </div>
+                <div class="phone">
+                    +7 915 390 12 30
+                </div>
+                <div class="email">
+                    kitosnikitos@gmail.com
+                </div>
+                <div class="working-hours">
+                    Пн-Пт: 09:00 - 20:00
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
